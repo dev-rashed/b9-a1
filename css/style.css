@@ -1,0 +1,514 @@
+/* Global styles for the project. */
+/* font-family: 'Inter', sans-serif;
+font-family: 'Merriweather', serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 1320px;
+    margin: 50px auto;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-red {
+    color: #F00;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.btn-danger {
+    text-decoration: none;
+    background-color: #F00;
+    color: #fff;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 5px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    margin-top:40px;
+    display: inline-block;
+}
+
+
+/* Hero section sytels */
+#hero {
+    height: 600px;
+    background: url(../resources/Banner\ Image.png) no-repeat center center/cover;
+    position: relative;
+}
+
+#hero::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 32%);
+    border-radius: 13px;
+}
+
+#hero .content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+#hero .content p {
+    font-family: "Merriweather", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+#hero .content h1 {
+    font-family: "Merriweather", Helvetica;
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 72px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 95px;
+}
+/* Hero section sytels end */
+
+/* Category secton styles */
+#category {
+    margin: 120px 0;
+}
+
+#category h3 {
+    font-family: Inter;
+    font-size: 88px;
+    font-weight: 700;
+}
+
+#category p.label {
+    color: #F00;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+#category h3.title-2 {
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 7px;
+}
+
+#category .img-wrapper {
+    margin-top: 30px;
+}
+
+#category img {
+    width: 800px;
+    height: 500px;
+    flex-shrink: 0;
+}
+
+/* Category secton styles end */
+
+/* Welcome section design  */
+#welcome {
+    background: url(../resources/Vectorrr.png) no-repeat center center/cover;
+    position: relative;
+    height: 600px;
+    padding: 126px;
+}
+
+#welcome::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(81deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 13px;
+}
+
+#welcome .content {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    display: flex;
+}
+
+#welcome .content .text-content{
+    /* position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+#welcome .content h2 {
+    font-family: Merriweather;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 88px;
+    letter-spacing: 7.04px;
+}
+
+#welcome .content p {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 24px;
+}
+
+#welcome .content .img-wrapper {
+    width: 416px;
+}
+
+#welcome .content .img-wrapper img {
+    width: 100%;
+}
+/* Welcome section design end */
+
+ 
+/* Event section design */
+#event {
+    margin: 120px 0;
+    padding: 100px 0;
+    border-radius: 13px;
+    background: linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
+}
+
+#event h3 {
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 56px;
+}
+/* Event section design end */
+
+/* Coming soon offer section design */
+#comming-offer .content {
+    display: flex;
+}
+#comming-offer .content>div {
+    width: 33.33%;
+}
+#comming-offer .content .text-content:first-child {
+    padding-right: 40px;
+
+}
+#comming-offer .content .text-content:first-child h3 {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+}
+#comming-offer .content .text-content:first-child h2 {
+    font-family: Merriweather;
+    font-size: 48px;
+    font-weight: 900;
+}
+#comming-offer .content .text-content p {
+    font-family: Inter;
+    color: rgba(7, 2, 17, 0.60);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px; 
+}
+#comming-offer .content .text-content:last-child {
+    padding-left: 40px;
+}
+#comming-offer .content .text-content:last-child h2 {
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+}
+#comming-offer .img-wrapper {
+    /* text-align: center;
+    border: 15px solid #F00;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px; */
+}
+#comming-offer .img-wrapper img {
+    width: 100%;
+    border-radius: 50%;
+    padding: 40px;
+    border: 15px solid #F00;
+}
+#comming-offer .content .text-content .wrapper {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* Coming soon offer section design end */
+
+/* Holiday section  */
+#holiday {
+    margin: 120px 0;
+}
+
+#holiday h4 {
+    color: #070211;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#holiday h2 {
+    color: #070211;
+    font-family: Merriweather;
+    font-size: 72px;
+    font-weight: 900;
+    margin-top: 16px;
+}
+
+#holiday p {
+    color: rgba(7, 2, 17, 0.60);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-top: 28px;
+    padding: 0px 190px;
+}
+
+#holiday .img-first-section {
+    display: flex;
+    margin-bottom: -20px;
+    position: relative;
+    z-index: 1;
+    justify-content: space-between;
+}
+
+#holiday .img-first-section .img-2 {
+    max-width: 430px;
+    position: relative;
+}
+
+#holiday .img-first-section .img-1 {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+#holiday .img-first-section .img-1 img {
+    width: 632px;
+    position: relative;
+    bottom: -163px;
+}
+
+#holiday .img-first-section .img-2 img {
+    position: relative;
+    bottom: -76px;
+}
+
+#holiday .img-second-section img {
+    width: 100%;
+    float: right;
+}
+
+/* Holiday section end */
+
+/* Gallery section  */
+#gallery {
+    margin: 120px 0;
+    margin-top: 360px;
+}
+
+#gallery h3 {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#gallery h2 {
+    color: #070211;
+    font-family: Merriweather;
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin-top: 7px;
+}
+
+#gallery p {
+    color: rgba(7, 2, 17, 0.60);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px; 
+    margin-top: 24px;
+}
+
+#gallery .gallery {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 24px;
+}
+
+#gallery .gallery .wrapper {
+    width: 425px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+#gallery .gallery img {
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+#gallery .gallery img:hover {
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+/* Gallery section end */
+
+/* Newsletter section  */
+#newsletter {
+    padding: 80px 212px;
+    border-radius: 16px;
+    background: rgba(255, 0, 0, 0.05);
+}
+
+#newsletter img {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+}
+
+#newsletter h2 {
+    color: #070211;
+    font-family: Merriweather;
+    font-size: 48px;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#newsletter p {
+    color: rgba(7, 2, 17, 0.60);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+#newsletter form {
+    width: 650px;
+    display: inline-block;
+}
+
+#newsletter form input {
+    float: left;
+    width: calc(650px - 210px);
+    padding: 25px 30px;
+    color: rgba(7, 2, 17, 0.30);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    border: unset;
+    border-radius: 50px 0 0 50px;
+    margin-top: 39px;
+}
+
+#newsletter form input:focus-visible {
+    outline: unset;
+}
+
+#newsletter form button {
+    width: 210px;
+    float: right;
+    border-radius: 0px 50px 50px 0px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 40px;
+    
+}
+/* Newsletter section end */
+
+/* footer */
+footer {
+    background: #070211;
+}
+
+footer .row {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+footer .row:first-child {
+    padding-top: 120px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .row div {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px; 
+}
+
+footer .row ul li{
+    color: #fff;
+    list-style: none;
+}
+
+footer .social {
+    padding: 48px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+footer .social ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+footer .social ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+footer .row:last-child {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+/* footer end */
